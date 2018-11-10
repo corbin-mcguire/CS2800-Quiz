@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <header>
-        <h2>Javascript Quiz</h2>
+    <header class="header">
+        <h2>PC Building Quiz</h2>
     </header>
     <main class="container">
         <form id="quiz" action="">
-            <fieldset class="question">
+            <fieldset class="question" id="question1Set">
                 <legend>Question 1</legend>
                 <h4>Which of these components are required in a computer?</h4>
                 <div>
@@ -120,14 +120,13 @@
                 </div>
                 <span class="answerStatus">Incorrect.</span>
             </fieldset>
-            <div class="container">
-                <button type="button" id="submitQuiz">Show Results</button>
-                <p id="resultsP"></p>
-            </div>
+            <!-- <a href="#" id="submitQuiz">Show Results</a> -->
+            <button id="submitQuiz" class="btn btn-submitQuiz" type="button">Show Results</button>
+            <p id="resultsP"></p>
         </form>
     </main>
     <br>
-    <footer>
+    <footer class="footer">
         <span>&copy; Corbin McGuire - CS2800 Project 4 - Fall 2018</span>
     </footer>
     <!-- My Javascript files -->

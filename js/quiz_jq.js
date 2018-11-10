@@ -5,10 +5,6 @@ $(document).ready(function () {
         var score = getNumCorrect(answers);
         showResults(score);
     });
-
-    /**
-     * Gets the answers from the form.
-     */
     var getAns = function () {
         var userAnswers = []; // Store all the answers in an array.
         var q1 = $("input[name='q1']:checked").val(); // Gets only the checked radio button.
@@ -23,11 +19,6 @@ $(document).ready(function () {
         userAnswers.push(q5);
         return userAnswers;
     };
-
-    /**
-     * Returns the number of questions the user got correct
-     * @param {Array} ans array of answers 
-     */
     var getNumCorrect = function (ans) {
         var numCorrect = 0;
         for (var i = 0; i < 5; i++) {
@@ -37,11 +28,6 @@ $(document).ready(function () {
         }
         return numCorrect;
     };
-    
-    /**
-     * Shows the results to the user.
-     * @param {number} nc number of answers correct
-     */
     var showResults = function (nc) {
         $("#resultsP").html("Score: " + nc + "/5 " + "- " + ((nc / 5) * 100) + "&percnt;"); // show score.
         var status = $(".answerStatus"); // Get an array of all span elements that have class answerStatus

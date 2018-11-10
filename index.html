@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h2>Building a PC</h2>
     </header>
     <main class="container">
@@ -48,9 +48,11 @@
             card and now we need to install it. There will be PCIE slots under the CPU socket, this is where the GPU
             will be placed. After the GPU is slotted in, connect it to the power supply. That's it! Now all the
             components are installed and you just built your own computer! Are you ready for the quiz?</p>
-        <button id="startQuiz" type="button" onclick="window.open('quiz.html', '_self');">Take Quiz!</button>
+        <!-- <a href="quiz.html" id="startQuiz">Take Quiz!</a> -->
+        <button id="startQuiz" class="btn btn-startQuiz" type="button" onclick="window.open('quiz.html', '_self');">Take
+            Quiz!</button>
     </main>
-    <footer>
+    <footer class="footer">
         <span>&copy; Corbin McGuire - CS2800 Project 4 - Fall 2018</span>
     </footer>
 </body>
