@@ -1,135 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
 }
 
 .header {
-    color: #fff;
-    padding: 1%;
-    margin-bottom: 2vh;
-    /* background-image: linear-gradient(to left, rgb(255, 0, 13), rgb(0, 0, 0)); */
-    background-color: #09f;
+  color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #09f;
 }
 
 .footer {
-    color: #777;
-    padding: 10px;
-    margin-top: 2vh;
-    text-align: center;
-    /* background-image: linear-gradient(to left, rgb(255, 0, 13), rgb(0, 0, 0)); */
+  color: #777;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .container {
-    margin-left: 15%;
-    margin-right: 15%;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 
 .container p {
-    margin-bottom: 2vh;
-    line-height: 25px;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
 }
 
 .btn {
-    height: 40px;
-    width: 150px;
-    padding: 2px;
-    border-radius: 100px;
-    border: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  height: 4rem;
+  width: 15rem;
+  padding: .2rem;
+  border-radius: 10rem;
+  border: none;
+  display: block;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-startQuiz {
-    background-color: #fff;
-    border: 2px solid #09f;
-    color: #09f;
-    transition: all 0.25s ease-in;
+  background-color: #fff;
+  border: .2rem solid #09f;
+  color: #09f;
+  transition: all 0.25s ease-in;
 }
 
 .btn-startQuiz:hover {
-    color: #fff;
-    background-color: #09f;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  background-color: #09f;
+  transform: translateY(-.5rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
 }
 
 .btn-submitQuiz {
-    background-color: #fff;
-    border: 2px solid rgb(4, 136, 4);
-    color: rgb(4, 136, 4);
-    transition: all .25s ease-in;
-    animation: moveUp 1 ease-out 1.5s;
+  background-color: #fff;
+  border: .2rem solid rgb(4, 136, 4);
+  color: rgb(4, 136, 4);
+  transition: all 0.25s ease-in;
+  animation: moveUp 1 ease-out 1.5s;
 }
 
 .btn-submitQuiz:hover {
-    color: #fff;
-    background-color: rgb(4, 136, 4);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  background-color: rgb(4, 136, 4);
+  transform: translateY(-.5rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
 }
 
 .question {
-    margin-bottom: 2vh;
-    border-radius: 10px;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
 }
 
 #question1Set {
-    animation: moveUp 1 ease-out .25s;
+  animation: moveUp 1 ease-out 0.25s;
 }
 
 #question2Set {
-    animation: moveUp 1 ease-out .5s;
-
+  animation: moveUp 1 ease-out 0.5s;
 }
 
 #question3Set {
-    animation: moveUp 1 ease-out .75s;
-
+  animation: moveUp 1 ease-out 0.75s;
 }
 
 #question4Set {
-    animation: moveUp 1 ease-out 1s;
-
+  animation: moveUp 1 ease-out 1s;
 }
 
 #question5Set {
-    animation: moveUp 1 ease-out 1.25s;
-
+  animation: moveUp 1 ease-out 1.25s;
 }
 
 .question h4,
 .question div,
 .question span {
-    margin: .5%;
+  margin: 0.5rem;
 }
 
 .question legend {
-    margin-left: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
+  margin-left: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .answerStatus {
-    color: red;
-    display: none;
+  color: red;
+  display: none;
 }
 
 #resultsP {
-    text-align: center;
-    margin: 2%;
-    text-transform: uppercase;
+  text-align: center;
+  margin: 2.5rem;
+  text-transform: uppercase;
 }
 
 @keyframes moveUp {
-    0% {
-        transform: translateY(1000px);
-    }
+  0% {
+    transform: translateY(100rem);
+  }
 
-    80% {
-        transform: translateY(-10px);
-    }
+  80% {
+    transform: translateY(-1rem);
+  }
 
-    100% {
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }

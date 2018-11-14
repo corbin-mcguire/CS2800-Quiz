@@ -20,12 +20,12 @@ var getAns = function () {
 
 /**
  * Returns the number of questions the user got correct.
- * @param {Array} ans 
+ * @param {Array} answers 
  */
-var getNumCorrect = function (ans) {
+var getNumCorrect = function (answers) {
     var numCorrect = 0;
     for (var i = 0; i < 5; i++) {
-        if (ans[i] == "correct") {
+        if (answers[i] == "correct") {
             numCorrect++;
         }
     }
@@ -36,7 +36,9 @@ var getNumCorrect = function (ans) {
  * Shows the results to the user.
  * @param {number} nc number correct
  */
-var showResults = function (nc) {
+var showResults = function () {
+    // Get number of questions correct
+    var nc = getNumCorrect(getAns());
     // Show score
     document.getElementById("resultsP").innerHTML = "Score: " + nc + "/5 " + "- " + ((nc / 5) * 100) + "&percnt;";
 
@@ -45,7 +47,7 @@ var showResults = function (nc) {
     // Get user answers for comparison.
     var a = getAns();
 
-    /* Iterate through the HTML elements that have class "answerStatus". These  elements will only be shown if the user's answers do not match the     answer key. */
+    /* Iterate through the HTML elements that have class "answerStatus". */
     for (var i = 0; i < status.length; i++) {
         if (a[i] != "correct") {
             status[i].style.display = "block"; // Elements hidden by default.
@@ -60,6 +62,6 @@ window.onload = function () {
     document.getElementById("submitQuiz").onclick = function () {
         var answers = getAns();
         var score = getNumCorrect(answers);
-        showResults(score);
+        showResults();
     };
 };
