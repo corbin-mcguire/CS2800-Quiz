@@ -49,6 +49,11 @@ body {
   margin-right: auto;
 }
 
+.btn:hover,
+.btn:active {
+  cursor: pointer;
+}
+
 .btn-startQuiz {
   background-color: #fff;
   border: .2rem solid #09f;
@@ -76,6 +81,7 @@ body {
   background-color: rgb(4, 136, 4);
   transform: translateY(-.5rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+
 }
 
 .question {
