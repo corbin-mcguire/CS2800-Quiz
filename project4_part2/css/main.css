@@ -49,6 +49,11 @@ body {
   margin-right: auto;
 }
 
+.btn:hover,
+.btn:active {
+  cursor: pointer;
+}
+
 .btn-startQuiz {
   background-color: #fff;
   border: .2rem solid #09f;
