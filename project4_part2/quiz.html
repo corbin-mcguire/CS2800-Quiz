@@ -1,17 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Building a PC - Quiz</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <meta charset="utf-8" />
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <h2>PC Building Quiz</h2>
+        <h2>PC Building Quiz (Javascript)</h2>
     </header>
     <main class="container">
         <form id="quiz" action="">
@@ -19,119 +19,125 @@
                 <legend>Question 1</legend>
                 <h4>Which of these components are required in a computer?</h4>
                 <div>
-                    <input type="radio" name="q1" id="q1o1" value="correct">
+                    <input type="radio" name="q1" id="q1o1" value="correct" />
                     <label for="q1o1">motherboard</label>
                 </div>
                 <div>
-                    <input type="radio" name="q1" id="q1o2" value="incorrect">
+                    <input type="radio" name="q1" id="q1o2" value="incorrect" />
                     <label for="q1o2">bluetooth adapter</label>
                 </div>
                 <div>
-                    <input type="radio" name="q1" id="q1o3" value="incorrect">
+                    <input type="radio" name="q1" id="q1o3" value="incorrect" />
                     <label for="q1o3">WiFi card</label>
                 </div>
                 <div>
-                    <input type="radio" name="q1" id="q1o4" value="incorrect">
+                    <input type="radio" name="q1" id="q1o4" value="incorrect" />
                     <label for="q1o4">sound card</label>
                 </div>
-                <span class="answerStatus">Incorrect.</span>
+                <span class="answerStatus" id="q1AnswerStatus"></span>
             </fieldset>
             <fieldset class="question" id="question2Set">
                 <legend>Question 2</legend>
-                <h4>Which component goes directly under the CPU on the motherboard?</h4>
+                <h4>
+                    Which component goes directly under the CPU on the motherboard?
+                </h4>
                 <div>
-                    <input type="radio" name="q2" id="q2o1" value="incorrect">
+                    <input type="radio" name="q2" id="q2o1" value="incorrect" />
                     <label for="q2o1">Memory</label>
                 </div>
                 <div>
-                    <input type="radio" name="q2" id="q2o2" value="correct">
+                    <input type="radio" name="q2" id="q2o2" value="correct" />
                     <label for="q2o2">GPU</label>
                 </div>
                 <div>
-                    <input type="radio" name="q2" id="q2o3" value="incorrect">
+                    <input type="radio" name="q2" id="q2o3" value="incorrect" />
                     <label for="q2o3">CPU</label>
                 </div>
                 <div>
-                    <input type="radio" name="q2" id="q2o4" value="incorrect">
+                    <input type="radio" name="q2" id="q2o4" value="incorrect" />
                     <label for="q2o4">Power Supply</label>
                 </div>
-                <span class="answerStatus">Incorrect.</span>
+                <span class="answerStatus" id="q2AnswerStatus"></span>
             </fieldset>
             <fieldset class="question" id="question3Set">
                 <legend>Question 3</legend>
-                <h4>Which component goes to the right (and sometimes the left) of the CPU on the motherboard?</h4>
+                <h4>
+                    Which component goes to the right (and sometimes the left) of the
+                    CPU on the motherboard?
+                </h4>
                 <div>
-                    <input type="radio" name="q3" id="q3o1" value="incorrect">
+                    <input type="radio" name="q3" id="q3o1" value="incorrect" />
                     <label for="q3o1">SSD</label>
                 </div>
                 <div>
-                    <input type="radio" name="q3" id="q3o2" value="incorrect">
+                    <input type="radio" name="q3" id="q3o2" value="incorrect" />
                     <label for="q3o2">CPU</label>
                 </div>
                 <div>
-                    <input type="radio" name="q3" id="q3o3" value="correct">
+                    <input type="radio" name="q3" id="q3o3" value="correct" />
                     <label for="q3o3">Memory</label>
                 </div>
                 <div>
-                    <input type="radio" name="q3" id="q3o4" value="incorrect">
+                    <input type="radio" name="q3" id="q3o4" value="incorrect" />
                     <label for="q3o4">GPU</label>
                 </div>
-                <span class="answerStatus">Incorrect.</span>
+                <span class="answerStatus" id="q3AnswerStatus"></span>
             </fieldset>
             <fieldset class="question" id="question4Set">
                 <legend>Question 4</legend>
                 <h4>Why would someone need a more powerful system?</h4>
                 <div>
-                    <input type="radio" name="q4" id="q4o1" value="correct">
+                    <input type="radio" name="q4" id="q4o1" value="correct" />
                     <label for="q4o1">To run games and render videos</label>
                 </div>
                 <div>
-                    <input type="radio" name="q4" id="q4o2" value="incorrect">
+                    <input type="radio" name="q4" id="q4o2" value="incorrect" />
                     <label for="q4o2">Edit word documents</label>
                 </div>
                 <div>
-                    <input type="radio" name="q4" id="q4o3" value="incorrect">
+                    <input type="radio" name="q4" id="q4o3" value="incorrect" />
                     <label for="q4o2">Edit spreadsheets</label>
                 </div>
                 <div>
-                    <input type="radio" name="q4" id="q4o4" value="incorrect">
+                    <input type="radio" name="q4" id="q4o4" value="incorrect" />
                     <label for="q4o2">Web Browsing</label>
                 </div>
-                <span class="answerStatus">Incorrect.</span>
+                <span class="answerStatus" id="q4AnswerStatus"></span>
             </fieldset>
             <fieldset class="question" id="question5Set">
                 <legend>Question 5</legend>
                 <h4>Which component should be installed before anything else?</h4>
                 <div>
-                    <input type="radio" name="q5" id="q5o1" value="incorrect">
+                    <input type="radio" name="q5" id="q5o1" value="incorrect" />
                     <label for="q5o1">HDD</label>
                 </div>
                 <div>
-                    <input type="radio" name="q5" id="q5o2" value="incorrect">
+                    <input type="radio" name="q5" id="q5o2" value="incorrect" />
                     <label for="q5o2">CPU</label>
                 </div>
                 <div>
-                    <input type="radio" name="q5" id="q5o3" value="incorrect">
+                    <input type="radio" name="q5" id="q5o3" value="incorrect" />
                     <label for="q5o3">Memory</label>
                 </div>
                 <div>
-                    <input type="radio" name="q5" id="q5o4" value="correct">
+                    <input type="radio" name="q5" id="q5o4" value="correct" />
                     <label for="q5o4">Power Supply</label>
                 </div>
-                <span class="answerStatus">Incorrect.</span>
+                <span class="answerStatus" id="q5AnswerStatus"></span>
             </fieldset>
             <!-- <a href="#" id="submitQuiz">Show Results</a> -->
-            <button id="submitQuiz" class="btn btn-submitQuiz" type="button">Show Results</button>
+            <button id="submitQuiz" class="btn btn-submitQuiz" type="button">
+                Show Results
+            </button>
             <p id="resultsP"></p>
         </form>
     </main>
-    <br>
+    <br />
     <footer class="footer">
         <span>&copy; Corbin McGuire - CS2800 Project 4 - Fall 2018</span>
     </footer>
     <!-- My Javascript files -->
-    <!-- <script src="js/quiz.js" defer></script> -->
-    <script src="js/quiz_jq.js" defer></script>
+    <script src="js/quiz.js" defer></script>
 </body>
 
 </html>
